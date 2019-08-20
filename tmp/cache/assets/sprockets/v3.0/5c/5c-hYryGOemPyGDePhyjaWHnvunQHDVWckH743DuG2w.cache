@@ -1,0 +1,75 @@
+{:uriI"¨file://app/assets/codelab/vendor/amcharts/plugins/dataloader/examples/gantt_json.html?type=text/html&id=259118d1f1ba58a2676a851f4e0aaaf60d1b6951d67397c8f53be3a7c0b64097:ET:load_pathI"app/assets/codelab;T:filenameI"Sapp/assets/codelab/vendor/amcharts/plugins/dataloader/examples/gantt_json.html;T:	nameI";vendor/amcharts/plugins/dataloader/examples/gantt_json;T:logical_pathI"@vendor/amcharts/plugins/dataloader/examples/gantt_json.html;T:content_typeI"text/html;T:sourceI"ð<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>amCharts Data Loader Example</title>
+    <script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="http://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="http://www.amcharts.com/lib/3/gantt.js"></script>
+    <script src="http://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="../dataloader.min.js"></script>
+    <style>
+    body, html {
+      font-family: Verdana;
+      font-size: 12px;
+    }
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+    }
+    </style>
+    <script>
+      AmCharts.useUTC = true;
+      var chart = AmCharts.makeChart("chartdiv", {
+        "type": "gantt",
+        "theme": "light",
+        "dataLoader": {
+          "url": "data/gantt.json"
+        },
+        "dataProvider": [],
+        "period": "hh",
+        "dataDateFormat": "YYYY-MM-DD",
+        "balloonDateFormat": "JJ:NN",
+        "columnWidth": 0.5,
+        "valueAxis": {
+          "type": "date",
+          "minimum": 7,
+          "maximum": 31
+        },
+        "brightnessStep": 10,
+        "graph": {
+          "fillAlphas": 1,
+          "balloonText": "<b>[[task]]</b>: [[open]] [[value]]"
+        },
+        "rotate": true,
+        "categoryField": "category",
+        "segmentsField": "segments",
+        "colorField": "color",
+        "startDate": "2015-01-01",
+        "startField": "start",
+        "endField": "end",
+        "durationField": "duration",
+        "chartScrollbar": {},
+        "chartCursor": {
+          "valueBalloonsEnabled": false,
+          "cursorAlpha": 0.1,
+          "valueLineBalloonEnabled": true,
+          "valueLineEnabled": true,
+          "fullWidth": true
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="chartdiv"></div>
+  </body>
+
+</html>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"afile-digest://app/assets/codelab/vendor/amcharts/plugins/dataloader/examples/gantt_json.html;TTF:charsetI"
+utf-8;F:digest"%\Lm4ú UBÒM:3m,dêäm¾|C«x7’k„‘¯:lengthið:dependencies_digest"%âo¾:Bïæ/¡}þ¥Ì'
+kcN±½ð‹ãS¢/Eß:idI"E259118d1f1ba58a2676a851f4e0aaaf60d1b6951d67397c8f53be3a7c0b64097;F:
+mtimel+h>]

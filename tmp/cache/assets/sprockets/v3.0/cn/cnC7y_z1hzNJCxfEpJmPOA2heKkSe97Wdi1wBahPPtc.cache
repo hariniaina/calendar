@@ -1,0 +1,32 @@
+{:uriI"ùfile://app/assets/codelab/vendor/amcharts/plugins/export/bower.json?type=application/json&id=58fd190c06ac7089cd40303d5672f7b4b27e5161890489c9128e17ab75b5dfe7:ET:load_pathI"app/assets/codelab;T:filenameI"Aapp/assets/codelab/vendor/amcharts/plugins/export/bower.json;T:	nameI")vendor/amcharts/plugins/export/bower;T:logical_pathI".vendor/amcharts/plugins/export/bower.json;T:content_typeI"application/json;T:sourceI"¯{
+  "name": "amcharts3-export",
+  "authors": [
+    "amCharts <contact@amcharts.com>"
+  ],
+  "description": "amCharts V3 Export plugin",
+  "main": [
+    "export.js"
+  ],
+  "keywords": [
+    "amcharts",
+    "charts",
+    "javascript",
+    "plugin"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "dependencies": {
+    "amcharts3": ">= 3.11.1"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://www.amcharts.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amcharts/export.git"
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ofile-digest://app/assets/codelab/vendor/amcharts/plugins/export/bower.json;TTF:charsetI"
+utf-8;F:digest"%…WÍ Ø±ÃUyÕbOøüó°NÜ¯Äˇ7‹»‰!@ÅT:lengthi¯:dependencies_digest"%Ì X#˙&Ç´Z]{∆n∫ØiÅT≤•ü&õØEæ¡-{:idI"E58fd190c06ac7089cd40303d5672f7b4b27e5161890489c9128e17ab75b5dfe7;F:
+mtimel+hê>]

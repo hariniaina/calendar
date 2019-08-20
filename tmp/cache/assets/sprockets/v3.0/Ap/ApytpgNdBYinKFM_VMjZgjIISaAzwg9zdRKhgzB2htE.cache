@@ -1,0 +1,88 @@
+{:uriI"ùfile://app/assets/codelab/vendor/amcharts/plugins/animate/examples/xy.html?type=text/html&id=3f226f90af88b4cdc8bd1852c55a7fa495a5f7eb0754b8eadc830888cd9a3deb:ET:load_pathI"app/assets/codelab;T:filenameI"Happ/assets/codelab/vendor/amcharts/plugins/animate/examples/xy.html;T:	nameI"0vendor/amcharts/plugins/animate/examples/xy;T:logical_pathI"5vendor/amcharts/plugins/animate/examples/xy.html;T:content_typeI"text/html;T:sourceI"'<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<style>
+			html, body {
+				width: 100%;
+				height: 100%;
+				margin: 0px;
+			}
+
+			#chartdiv {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script src="http://www.amcharts.com/lib/3/xy.js"></script>
+		<script src="http://www.amcharts.com/lib/3/themes/light.js"></script>
+		<script src="../animate.js"></script>
+
+		<div id="chartdiv"></div>
+
+		<script>
+			var chart = AmCharts.makeChart("chartdiv", {
+				"type": "xy",
+				"theme": "light",
+				"dataProvider": generateChartData(),
+				"valueAxes": [{
+					"position": "left",
+					"minimum": 0,
+					"maximum": 100
+				}, {
+					"position": "bottom",
+					"minimum": 0,
+					"maximum": 100
+				}],
+				"graphs": [{
+					"bullet": "round",
+					"xField": "x",
+					"yField": "y",
+					"valueField": "value",
+					"alphaField": "alpha"
+				}]
+			});
+
+
+			function generateChartData() {
+				var chartData = [];
+
+				for ( var i = 0; i < 50; i++ ) {
+					chartData.push( {
+						x: Math.floor(Math.random() * 100),
+						y: Math.floor(Math.random() * 100),
+						value: Math.floor(Math.random() * 100),
+						alpha: Math.random()
+					} );
+				}
+
+				return chartData;
+			}
+
+
+			function loop() {
+				var data = generateChartData();
+
+				chart.animateData(data, {
+					duration: 1000,
+					complete: function () {
+						setTimeout(loop, 2000);
+					}
+				});
+			}
+
+			chart.addListener("init", function () {
+				setTimeout(loop, 1000);
+			});
+		</script>
+	</body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Vfile-digest://app/assets/codelab/vendor/amcharts/plugins/animate/examples/xy.html;TTF:charsetI"
+utf-8;F:digest"%"3E»=ï·#∑`T}m	¶q1å^dﬂ®.p<!(º#:lengthi':dependencies_digest"%ò'röõY∑??∏ÂﬂÏ|N Ãe1ömQùâ∑ªËT:idI"E3f226f90af88b4cdc8bd1852c55a7fa495a5f7eb0754b8eadc830888cd9a3deb;F:
+mtimel+hê>]

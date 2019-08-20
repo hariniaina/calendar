@@ -1,0 +1,51 @@
+<div id="preloader">
+    <div class="preloader">
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div id="top"></div>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: url('/assets/l-images/bg-img-small.jpg');">
+    <div class="container" style="height: 75px;">
+        <a class="navbar-brand d-flex align-items-center" href="/" style="height: 80px;"><img src="/assets/l-images/sayna_logo_1.png" style="height: 90px;" alt=""></a>
+        <button class="navbar-toggler collapsed menu-text" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+            <span class="sr-only">Sayna</span>
+        </button><!-- / navbar-toggler -->
+        <div class="collapse navbar-collapse" id="navbar-toggle">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item after-dropdown">
+                    <a class="nav-link" data-method='GET' href="<%= root_path %>">ACCUEIL</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="cursor: pointer;" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROGRAMME</a>
+                    <div class="dropdown-menu drop-to-right dropdown-inverse animated fadeIn fast" aria-labelledby="dropdown1">
+                        <a class="dropdown-item" data-method='GET' href="<%= simplon_path %>">SIMPLON</a>
+                        <a class="dropdown-item" data-method='GET' href="<%= thp_path %>">T.H.P</a>
+                    </div><!-- / dropdown-menu -->
+                </li><!-- / dropdown -->
+                <li class="nav-item after-dropdown">
+                    <a class="nav-link" data-method='GET' href="<%= team_path %>">EQUIPE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" data-method='GET' href="#contact">CONTACT</a>
+                </li>
+                <% if user_signed_in? %>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" data-method='GET' href="<%= appointments_path %>">MON AGENDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-method='DELETE' href="<%= destroy_user_session_path %>"><i class="fa fa-sign-out"></i></a>
+                </li>
+                <% else %>
+                <li class="nav-item last">
+                    <a class="nav-link smooth-scroll" data-method='GET' href="<%= new_user_session_path %>">CONNEXION</a>
+                </li>
+                <% end %>
+            </ul><!-- / navbar-nav -->
+        </div><!-- / navbar-collapse -->
+    </div><!-- / container -->
+</nav><!-- / navbar -->
+<a href="#top" class="scroll-to-top dark-scroll is-hidden smooth-scroll" data-nav-status="toggle"><i class="fa fa-arrow-up"></i></a>

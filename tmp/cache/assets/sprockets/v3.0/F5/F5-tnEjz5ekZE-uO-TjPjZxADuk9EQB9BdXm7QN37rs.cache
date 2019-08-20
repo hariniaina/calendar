@@ -1,0 +1,32 @@
+{:uriI"¡file://app/assets/codelab/vendor/amcharts/plugins/dataloader/bower.json?type=application/json&id=7b4509130843de01c02e154b0a68515eb5f21c253eeaae24cb053f0dfffb5d5d:ET:load_pathI"app/assets/codelab;T:filenameI"Eapp/assets/codelab/vendor/amcharts/plugins/dataloader/bower.json;T:	nameI"-vendor/amcharts/plugins/dataloader/bower;T:logical_pathI"2vendor/amcharts/plugins/dataloader/bower.json;T:content_typeI"application/json;T:sourceI"	{
+  "name": "amcharts3-dataloader",
+  "authors": [
+    "amCharts <contact@amcharts.com>"
+  ],
+  "description": "amCharts V3 Data Loader plugin",
+  "main": [
+    "dataloader.js"
+  ],
+  "keywords": [
+    "amcharts",
+    "charts",
+    "javascript",
+    "plugin"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "dependencies": {
+    "amcharts3": ">= 3.11.1"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://www.amcharts.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amcharts/dataloader.git"
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Sfile-digest://app/assets/codelab/vendor/amcharts/plugins/dataloader/bower.json;TTF:charsetI"
+utf-8;F:digest"%¿ÁØL³McIªÏœ±z8 …Hk.4‡’o}X:lengthi	:dependencies_digest"%‚à»Öìñ]@½è²G/âc@¶¥ï’>eIÇG¡;o:idI"E7b4509130843de01c02e154b0a68515eb5f21c253eeaae24cb053f0dfffb5d5d;F:
+mtimel+h>]

@@ -1,0 +1,77 @@
+<section id="contact" class="contact-bg dark parallax">
+    <div class="container w50">
+        <h2 class="section-title text-center mb-0">Et si on prenait un café au téléphone ? </h2>
+        <div class="spacer">&nbsp;</div>
+        <p class="text-center">Tu peux plannifier un appel avec un membre de notre équipe pour que l'on puisse parler de toi, de ton rôle de manager IT, de tes enjeux recrutements et de tes idées pour optimiser ce processus !</p>
+        <div id="social-buttons" class="text-center">
+            <a href="#reveal-footer" class="btn btn-icon btn-link pt-0 pb-0 m-1"><i class="fas fa-mobile-alt"></i> <span>Phone</span></a>
+            <a href="mailto:hello@sayna.io" class="btn btn-icon btn-link pt-0 pb-0 m-1"><i class="fas fa-envelope"></i> <span>Email</span></a>
+            <a href="https://www.facebook.com/HelloSayna/" target="_blank" class="btn btn-icon btn-link pt-0 pb-0 m-1"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+            <a href="https://twitter.com/razafimahefam?lang=en" target="_blank" class="btn btn-icon btn-link pt-0 pb-0 m-1"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+        </div><!-- social-buttons -->
+        <div class="spacer">&nbsp;</div>
+        <%= form_with(model: Appointment.new, html: {id: "contactForm"}) do |form| %>
+        <div class="row">
+            <div class="col-md-6 sub-col-left">
+                <div class="form-group">
+                    <%= form.text_field :name, class: "form-control", placeholder: "*Nom", title: "Votre nom", required: "required" %>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div><!-- / sub-column -->
+            <div class="col-md-6 sub-col-right">
+                <div class="form-group">
+                    <%= form.text_field :company, class: "form-control", placeholder: "*Nom de l'entreprise", title: "Le nom de votre entreprise", required: "required" %>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div><!-- / sub-column -->
+            <div class="col-md-12">
+                <div class="form-group">
+                    <%= form.email_field :email, class: "form-control", placeholder: "*Email", title: "Votre email", required: "required" %>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div><!-- / sub-column -->
+            <div class="col-md-6 sub-col-left">
+                <div class="form-group">
+                    <%= form.text_field :address, class: "form-control", placeholder: "*Addresse", title: "Votre addresse le plus proche", required: "required" %>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div><!-- / sub-column -->
+            <div class="col-md-6 sub-col-right">
+                <div class="form-group">
+                    <%= form.text_field :tel, class: "form-control", placeholder: "*Contact", title: "Votre contact rapide", required: "required" %>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div><!-- / sub-column -->
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="date" class="form-control" name="appointment[start_date]" title="Début de la date qui vous conviendrait" placeholder="Entre" style="margin-right: 2.5%;">
+                        <input type="date" class="form-control" name="appointment[end_date]" title="Fin de la date" placeholder="Et">
+                    </div>
+                </div>
+            </div>
+        </div><!-- / row -->
+        <div class="text-center">
+            <button type="submit" id="form-submit" class="btn btn-submit btn-primary rectangle"><span>Envoyer</span></button>
+            <div id="msgSubmit" class="h3 text-center hidden"></div>
+            <div class="clearfix"></div>
+        </div><!-- / text-center -->
+        <% end %>
+        <!-- / contactform -->
+    </div><!-- / container -->
+</section><!-- / contact -->
+
+<!--basic scripts-->
+<script src="/assets/vendor/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/assets/vendor/icheck/skins/icheck.min.js"></script>
+<!--date picker-->
+<script src="/assets/vendor/date-picker/js/bootstrap-datepicker.min.js"></script>
+<!--init date picker-->
+<script src="/assets/vendor/js-init/pickers/init-date-picker.js"></script>
+<!--[if lt IE 9]>
+    <script src="/assets/vendor/modernizr.js"></script>
+    <![endif]-->
+<!--basic scripts initialization-->
+<script src="/assets/js/scripts.js"></script>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  message: MyText
+  date: 2019-08-09 19:21:38
+  status: MyString
+  is_accepted?: false
+
+two:
+  name: MyString
+  email: MyString
+  message: MyText
+  date: 2019-08-09 19:21:38
+  status: MyString
+  is_accepted?: false

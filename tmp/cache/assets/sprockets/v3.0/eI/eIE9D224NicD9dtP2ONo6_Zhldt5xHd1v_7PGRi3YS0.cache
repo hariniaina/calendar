@@ -1,0 +1,103 @@
+{:uriI"•file://app/assets/codelab/vendor/data-tables/data/row-details.txt?type=text/plain&id=7aef8c87556bcb7c5d3533bbee2af7e7010c12162903b0131add6e9a7af1098f:ET:load_pathI"app/assets/codelab;T:filenameI"?app/assets/codelab/vendor/data-tables/data/row-details.txt;T:	nameI"(vendor/data-tables/data/row-details;T:logical_pathI",vendor/data-tables/data/row-details.txt;T:content_typeI"text/plain;T:sourceI"M	{
+  "draw": 1,
+  "recordsTotal": 57,
+  "recordsFiltered": 57,
+  "data": [
+    {
+      "DT_RowId": "row_5",
+      "first_name": "Airi",
+      "last_name": "Satou",
+      "position": "Accountant",
+      "office": "Tokyo",
+      "start_date": "28th Nov 08",
+      "salary": "$162,700"
+    },
+    {
+      "DT_RowId": "row_25",
+      "first_name": "Angelica",
+      "last_name": "Ramos",
+      "position": "Chief Executive Officer (CEO)",
+      "office": "London",
+      "start_date": "9th Oct 09",
+      "salary": "$1,200,000"
+    },
+    {
+      "DT_RowId": "row_3",
+      "first_name": "Ashton",
+      "last_name": "Cox",
+      "position": "Junior Technical Author",
+      "office": "San Francisco",
+      "start_date": "12th Jan 09",
+      "salary": "$86,000"
+    },
+    {
+      "DT_RowId": "row_19",
+      "first_name": "Bradley",
+      "last_name": "Greer",
+      "position": "Software Engineer",
+      "office": "London",
+      "start_date": "13th Oct 12",
+      "salary": "$132,000"
+    },
+    {
+      "DT_RowId": "row_28",
+      "first_name": "Brenden",
+      "last_name": "Wagner",
+      "position": "Software Engineer",
+      "office": "San Francisco",
+      "start_date": "7th Jun 11",
+      "salary": "$206,850"
+    },
+    {
+      "DT_RowId": "row_6",
+      "first_name": "Brielle",
+      "last_name": "Williamson",
+      "position": "Integration Specialist",
+      "office": "New York",
+      "start_date": "2nd Dec 12",
+      "salary": "$372,000"
+    },
+    {
+      "DT_RowId": "row_43",
+      "first_name": "Bruno",
+      "last_name": "Nash",
+      "position": "Software Engineer",
+      "office": "London",
+      "start_date": "3rd May 11",
+      "salary": "$163,500"
+    },
+    {
+      "DT_RowId": "row_23",
+      "first_name": "Caesar",
+      "last_name": "Vance",
+      "position": "Pre-Sales Support",
+      "office": "New York",
+      "start_date": "12th Dec 11",
+      "salary": "$106,450"
+    },
+    {
+      "DT_RowId": "row_51",
+      "first_name": "Cara",
+      "last_name": "Stevens",
+      "position": "Sales Assistant",
+      "office": "New York",
+      "start_date": "6th Dec 11",
+      "salary": "$145,600"
+    },
+    {
+      "DT_RowId": "row_4",
+      "first_name": "Cedric",
+      "last_name": "Kelly",
+      "position": "Senior Javascript Developer",
+      "office": "Edinburgh",
+      "start_date": "29th Mar 12",
+      "salary": "$433,060"
+    }
+  ]
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"4processors:type=text/plain&file_type=text/plain;TTI"Mfile-digest://app/assets/codelab/vendor/data-tables/data/row-details.txt;TTF:charsetI"
+utf-8;F:digest"%&¯5~ËzÝ
+Þmz8düÇã'ÄˆêCŒ·ê0
+(ü:lengthiM	:dependencies_digest"%„ÓnÔY¶ß–V¸boÚ 2ÿ›$×´IÖj½¤l5Ÿrß:idI"E7aef8c87556bcb7c5d3533bbee2af7e7010c12162903b0131add6e9a7af1098f;F:
+mtimel+g>]

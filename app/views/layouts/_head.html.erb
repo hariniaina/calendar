@@ -1,0 +1,155 @@
+<title>Calender</title>
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+<% stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<% if controller_name == "home" %>
+<!-- Favicon -->
+<link rel="icon" href="/assets/l-images/saynaicon_4.png" >
+<link href="/assets/vendor/date-picker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/l-css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/l-css/fontawesome-all.min.css">
+<link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/l-css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="/assets/l-css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/l-css/animate.css">
+<link rel="stylesheet" type="text/css" href="/assets/l-css/style.css">
+<% else %>
+<!--favicon icon-->
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<!--web fonts-->
+<!-- <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"> -->
+<!--bootstrap styles-->
+<link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--icon font-->
+<link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/assets/vendor/dashlab-icon/dashlab-icon.css" rel="stylesheet">
+<link href="/assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+<link href="/assets/vendor/themify-icons/css/themify-icons.css" rel="stylesheet">
+<link href="/assets/vendor/weather-icons/css/weather-icons.min.css" rel="stylesheet">
+<!--jquery ui-->
+<link href="/assets/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+<!--iCheck-->
+<link href="/assets/vendor/icheck/skins/all.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/assets/<%= controller_name %>/<%= action_name %>.css">
+<!--custom styles-->
+<link href="/assets/css/main.css" rel="stylesheet">
+<% end %>
+
+<%= yield :css_tag %>
+
+<% javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+<% if controller_name == "home" %>
+<script type="text/javascript" src="/assets/l-js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/l-js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/l-js/contact-form-validator.min.js"></script>
+<script type="text/javascript" src="/assets/l-js/hide-nav.js"></script>
+<script type="text/javascript" src="/assets/l-js/jquery.countTo.js"></script>
+<script type="text/javascript" src="/assets/l-js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="/assets/l-js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="/assets/l-js/jquery.shuffle.min.js"></script>
+<script type="text/javascript" src="/assets/l-js/owl.carousel.min.js"></script>
+<!-- <script type="text/javascript" src="/assets/l-js/particles.js"></script> -->
+<!-- <script type="text/javascript" src="/assets/l-js/particles-app.js"></script> -->
+<script type="text/javascript" src="/assets/l-js/portfolio.js"></script>
+<script type="text/javascript" src="/assets/l-js/preloader.js"></script>
+<script type="text/javascript" src="/assets/l-js/smooth-scroll-nonav.js"></script>
+<script type="text/javascript" src="/assets/l-js/smooth-scroll.js"></script>
+
+<script>
+$(document).ready(function() {
+    if (Modernizr.touch) {
+        // show the close overlay button
+        $(".close-overlay").removeClass("hidden");
+        // handle the adding of hover class when clicked
+        $(".img").click(function(e) {
+            if (!$(this).hasClass("hover")) {
+                $(this).addClass("hover");
+            }
+        });
+        // handle the closing of the overlay
+        $(".close-overlay").click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if ($(this).closest(".img").hasClass("hover")) {
+                $(this).closest(".img").removeClass("hover");
+            }
+        });
+    } else {
+        // handle the mouseenter functionality
+        $(".img").mouseenter(function() {
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function() {
+                $(this).removeClass("hover");
+            });
+    }
+});
+</script>
+<!-- / Portfolio Script -->
+<!-- LightBox -->
+<script>
+// This will create a single gallery from all elements that have class "lightbox"
+$('.lightbox').each(function() {
+    $(this).magnificPopup({
+        delegate: 'a.image-lightbox', // the selector for gallery item
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+});
+</script>
+<!-- / LightBox -->
+<!-- facts counter -->
+<script>
+$('.timer').countTo({
+    refreshInterval: 60,
+    formatter: function(value, options) {
+        return value.toFixed(options.decimals);
+    },
+});
+</script>
+<!-- / facts counter -->
+<!-- Owl Carousel -->
+<script>
+$('#clients-carousel').owlCarousel({
+    loop: true,
+    margin: 100,
+    dots: false,
+    autoplay: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+})
+</script>
+<!-- / Owl Carousel -->
+<% else %>
+<!--basic scripts-->
+<script src="/assets/vendor/jquery/jquery.min.js"></script>
+<script src="/assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="/assets/vendor/popper.min.js"></script>
+<script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/vendor/jquery.dcjqaccordion.2.7.js"></script>
+<script src="/assets/vendor/icheck/skins/icheck.min.js"></script>
+<!--touchspin-->
+<script src="/assets/vendor/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+<!--init touchpin-->
+<script src="/assets/vendor/js-init/init-touchspin.js"></script>
+<!--[if lt IE 9]>
+    <script src="/assets/vendor/modernizr.js"></script>
+    <![endif]-->
+<!--basic scripts initialization-->
+<script src="/assets/js/scripts.js"></script>
+<% end %>
+<%= yield :js_tag %>

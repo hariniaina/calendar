@@ -1,0 +1,32 @@
+{:uriI"¡file://app/assets/codelab/vendor/amcharts/plugins/responsive/bower.json?type=application/json&id=2c35fd394e518a90824960b783528cf3cf40259110b4f00f8a14644d4ce54c1f:ET:load_pathI"app/assets/codelab;T:filenameI"Eapp/assets/codelab/vendor/amcharts/plugins/responsive/bower.json;T:	nameI"-vendor/amcharts/plugins/responsive/bower;T:logical_pathI"2vendor/amcharts/plugins/responsive/bower.json;T:content_typeI"application/json;T:sourceI"{
+  "name": "amcharts3-responsive",
+  "authors": [
+    "amCharts <contact@amcharts.com>"
+  ],
+  "description": "amCharts V3 Responsive plugin",
+  "main": [
+    "responsive.js"
+  ],
+  "keywords": [
+    "amcharts",
+    "charts",
+    "javascript",
+    "plugin"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "dependencies": {
+    "amcharts3": ">= 3.11.1"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://www.amcharts.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/amcharts/responsive.git"
+  }
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Sfile-digest://app/assets/codelab/vendor/amcharts/plugins/responsive/bower.json;TTF:charsetI"
+utf-8;F:digest"%m¿ó§òãäÎphî¨iµOï6‰Yxg|[£UKÁ:lengthi:dependencies_digest"%æSqu-­”æŸë#JüBêòô™ÛòÀ,I]q`:idI"E2c35fd394e518a90824960b783528cf3cf40259110b4f00f8a14644d4ce54c1f;F:
+mtimel+g>]

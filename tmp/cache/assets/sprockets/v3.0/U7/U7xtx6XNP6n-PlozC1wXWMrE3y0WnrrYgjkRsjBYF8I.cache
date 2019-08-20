@@ -1,0 +1,81 @@
+{:uriI"Ÿfile://app/assets/codelab/vendor/amcharts/plugins/export/examples/gauge.html?type=text/html&id=94812f62ab3b70a91097f073432a613dd593f8a29f2a5bb15719cd6da7af32a9:ET:load_pathI"app/assets/codelab;T:filenameI"Japp/assets/codelab/vendor/amcharts/plugins/export/examples/gauge.html;T:	nameI"2vendor/amcharts/plugins/export/examples/gauge;T:logical_pathI"7vendor/amcharts/plugins/export/examples/gauge.html;T:content_typeI"text/html;T:sourceI"Ú<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script src="http://www.amcharts.com/lib/3/gauge.js"></script>
+
+		<!-- Export plugin includes and styles -->
+		<script src="../export.js"></script>
+		<link  type="text/css" href="../export.css" rel="stylesheet">
+
+		<style>
+		body, html {
+			height: 100%;
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			font-size: 11px;
+			font-family: Verdana;
+		}
+		#chartdiv {
+			width: 100%;
+			height: 100%;
+		}
+		</style>
+
+		<script type="text/javascript">
+			var chart = AmCharts.makeChart( "chartdiv", {
+				"type": "gauge",
+				"titles": [ {
+					"text": "Speedometer",
+					"size": 15
+				} ],
+				"axes": [ {
+					"startValue": 0,
+					"axisThickness": 1,
+					"endValue": 220,
+					"valueInterval": 10,
+					"bottomTextYOffset": -20,
+					"bottomText": "0 km/h",
+					"bands": [ {
+						"startValue": 0,
+						"endValue": 90,
+						"color": "#00CC00"
+					}, {
+						"startValue": 90,
+						"endValue": 130,
+						"color": "#ffac29"
+					}, {
+						"startValue": 130,
+						"endValue": 220,
+						"color": "#ea3838",
+						"innerRadius": "95%"
+					} ]
+				} ],
+				"arrows": [ {} ],
+				"export": {
+					"enabled": true
+				}
+			} );
+
+			setInterval( randomValue, 2000 );
+
+			// set random value
+			function randomValue() {
+				var value = Math.round( Math.random() * 200 );
+				chart.arrows[ 0 ].setValue( value );
+				chart.axes[ 0 ].setBottomText( value + " km/h" );
+			}
+		</script>
+	</head>
+	<body>
+		<div id="chartdiv"></div>
+	</body>
+</html>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Xfile-digest://app/assets/codelab/vendor/amcharts/plugins/export/examples/gauge.html;TTF:charsetI"
+utf-8;F:digest"%|ŒH@,Ö‰t-6Øë^B+­Rªí½V½jé	ÜNnT:lengthiÚ:dependencies_digest"%í” ëÀÂP®Ï÷mî8ÕN$Î‚ç¦½/ ]7â:idI"E94812f62ab3b70a91097f073432a613dd593f8a29f2a5bb15719cd6da7af32a9;F:
+mtimel+h>]

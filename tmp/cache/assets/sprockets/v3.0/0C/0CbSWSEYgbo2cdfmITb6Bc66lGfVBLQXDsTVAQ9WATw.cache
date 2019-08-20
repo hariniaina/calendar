@@ -1,0 +1,32 @@
+{:uriI"“file://app/assets/codelab/vendor/weather-icons/bower.json?type=application/json&id=37ca14960495edfd9d33f71e0e762d11b063d806eef404a7362eb91d0dcbb77c:ET:load_pathI"app/assets/codelab;T:filenameI"7app/assets/codelab/vendor/weather-icons/bower.json;T:	nameI"vendor/weather-icons/bower;T:logical_pathI"$vendor/weather-icons/bower.json;T:content_typeI"application/json;T:sourceI"x{
+	"name": "weather-icons",
+	"version": "2.0.10",
+	"homepage": "http://erikflowers.github.io/weather-icons/",
+	"keywords": [
+		"css", "icon-font", "weather", "icon", "icons"
+	],
+	"authors": [
+		"Erik Flowers <erik@helloerik.com>"
+	],
+	"description": "215 weather themed icons inspired by Font Awesome and ready for Bootstrap",
+	"license": "MIT",
+	"main": [
+		"./css/weather-icons.css",
+		"./css/weather-icons.min.css",
+		"./css/weather-icons-wind.css",
+		"./css/weather-icons-wind.min.css",
+		"./font/*",
+		"./less/weather-icons.less",
+		"./sass/weather-icons.scss"
+	],
+	"ignore": [
+		"_builder/",
+		"_docs/",
+		"font-source/"
+	]
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Efile-digest://app/assets/codelab/vendor/weather-icons/bower.json;TTF:charsetI"
+utf-8;F:digest"%Óî‚‹ûª"8õ«T"Wc0nÉTòx'4‘±‰Â@€J:lengthix:dependencies_digest"%âÕwŽk×£C!†óî€V´'ç–ÇePbnízõ7Å:idI"E37ca14960495edfd9d33f71e0e762d11b063d806eef404a7362eb91d0dcbb77c;F:
+mtimel+g>]

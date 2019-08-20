@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+
+<body>
+    <h1>Salut <strong>< Toi ></strong>!</h1>
+    <p>
+        <strong><%= @appointment.name.capitalize %></strong>
+        souhaiterait réserver un rendez-vous.<br>
+        Votre prochain temps libre sera le
+        <strong><%= I18n.l(@appointment.date, format: :long, locale: :fr) %></strong>
+        si ça vous va?<br>
+        cliquez sur <a href="<%= @edit_url %>" target="_blank" id="okBtn" data-method="GET">Accepter</a><br>
+        si non ? <a href="<%= @edit_url %>" target="_blank" id="editBtn" data-method="GET">Modifier la date</a><br>
+        <a href="<%= @index_url %>" target="_blank" id="indexBtn" data-method="GET">Afficher tous mes rendez-vous</a><br>
+    </p>
+</body>
+
+</html>

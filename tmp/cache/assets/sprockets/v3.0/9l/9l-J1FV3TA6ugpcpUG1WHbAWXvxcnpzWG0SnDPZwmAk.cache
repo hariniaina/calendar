@@ -1,0 +1,33 @@
+{:uriI"—file://app/assets/codelab/vendor/simple-line-icons/bower.json?type=application/json&id=31b2275b1bd5422586359cfd2687855d7c9fff05fefa46c756b9c1a226bdb76a:ET:load_pathI"app/assets/codelab;T:filenameI";app/assets/codelab/vendor/simple-line-icons/bower.json;T:	nameI"#vendor/simple-line-icons/bower;T:logical_pathI"(vendor/simple-line-icons/bower.json;T:content_typeI"application/json;T:sourceI"5{
+  "name": "simple-line-icons",
+  "version": "2.4.1",
+  "authors": [
+    "Sabbir Ahmed <sabbiirr@gmail.com>"
+  ],
+  "description": "Simple Line Icons Bower Package",
+  "keywords": [
+    "fonts",
+    "simple",
+    "simple-line",
+    "icon"
+  ],
+    "main": [
+        "css/simple-line-icons.css",
+        "scss/simple-line-icons.scss",
+        "less/simple-line-icons.less"
+    ],
+  "license": "MIT",
+  "homepage": "https://github.com/thesabbir/simple-line-icons",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ifile-digest://app/assets/codelab/vendor/simple-line-icons/bower.json;TTF:charsetI"
+utf-8;F:digest"%£–Š®ê´=G@®¢°‡í'ùÊ¼<h@ãßz IjL:lengthi5:dependencies_digest"%¥ßgƒ“¸g©ÉÇïžÝ¹ Qˆa=JÈÐûBý)ï:idI"E31b2275b1bd5422586359cfd2687855d7c9fff05fefa46c756b9c1a226bdb76a;F:
+mtimel+g>]

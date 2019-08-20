@@ -1,0 +1,40 @@
+<!--/main content wrapper-->
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,basicWeek,basicDay'
+        },
+        defaultDate: '<%= Time.now.strftime("%Y-%m-%d") %>',
+        navLinks: true, // can click day/week names to navigate views
+        editable: true,
+        eventLimit: true, // allow "more" link when too many events
+        events: [
+            <% appointments.each do |appointment| %> 
+                <% date = appointment.date %>
+                <% edate = (appointment.date+3600*2) %>
+            {
+                title: '<%= appointment.date.strftime("%Hh%M") %> avec <%= appointment.name %>',
+                url: '<%= edit_appointment_path(appointment.id) %>',
+                start: '<%= date.strftime("%Y-%m-%d") %>',
+                end: '<%= edate.strftime("%Y-%m-%d") %>',
+                <% if !appointment.is_accepted? %> 
+                className: "d-fc-event-warning"
+                <% else %>
+                    <% if Time.now <= edate %> // Soon
+                className: "d-fc-event-info"
+                    <% elsif edate < Time.now %> // Is past
+                className: "d-fc-event-success"
+                    <% else %>
+                    <% end %>
+                <% end %>
+            }<% if appointments.last != appointment %>, <% end %>
+            <% end %>
+        ]
+    });
+
+});
+</script>

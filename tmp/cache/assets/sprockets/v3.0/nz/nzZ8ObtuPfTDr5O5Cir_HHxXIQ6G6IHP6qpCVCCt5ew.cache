@@ -1,0 +1,25 @@
+{:uriI"±file://app/assets/codelab/vendor/amcharts/plugins/dataloader/examples/data/serial2.json?type=application/json&id=9ac8661fbc4948f35c4e6de94ab420d9a399dd7f5963ea22bde5ad3a55f55e19:ET:load_pathI"app/assets/codelab;T:filenameI"Uapp/assets/codelab/vendor/amcharts/plugins/dataloader/examples/data/serial2.json;T:	nameI"=vendor/amcharts/plugins/dataloader/examples/data/serial2;T:logical_pathI"Bvendor/amcharts/plugins/dataloader/examples/data/serial2.json;T:content_typeI"application/json;T:sourceI">[{
+    "year": 2005,
+    "income": 23.5,
+    "expenses": 18.1
+}, {
+    "year": 2006,
+    "income": 26.2,
+    "expenses": 22.8
+}, {
+    "year": 2007,
+    "income": 30.1,
+    "expenses": 23.9
+}, {
+    "year": 2008,
+    "income": 29.5,
+    "expenses": 25.1
+}, {
+    "year": 2009,
+    "income": 24.6,
+    "expenses": 25
+}];T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"cfile-digest://app/assets/codelab/vendor/amcharts/plugins/dataloader/examples/data/serial2.json;TTF:charsetI"
+utf-8;F:digest"%I.O*1oú&ÄX¤Ò¢¿Wˆ.2k[#.5Rën\X:lengthi>:dependencies_digest"%‰ÅFJNã4€Ü…c¸ðT:ñÝ‹­ž«BÕ†ÌÊLÉ÷c:idI"E9ac8661fbc4948f35c4e6de94ab420d9a399dd7f5963ea22bde5ad3a55f55e19;F:
+mtimel+h>]

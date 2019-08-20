@@ -1,0 +1,32 @@
+<div class="card">
+    <h1 class="title text-center">Rendez-vous</h1>
+    <%= form_with(url: "/appointments/#{@appointment.id}/sender", html: {id: 'edit-form'}) do |f| %>
+    <div class="input-container" style="margin: 0 60px 15px;">
+        <input type="#{type}" id="#{label}" required="required" value="Avec : <%= @appointment.name %>" readonly="readonly" />
+        <div class="bar"></div>
+    </div>
+    <div class="input-container" style="margin: 0 60px 15px;">
+        <input type="#{type}" id="#{label}" required="required" value="De : <%= @appointment.company %>" readonly="readonly" />
+        <div class="bar"></div>
+    </div>
+    <div class="input-container" style="margin: 0 60px 15px;">
+        <input type="#{type}" id="#{label}" required="required" value="à : <%= @appointment.address %>" class="text-capitalize" readonly="readonly" />
+        <div class="bar"></div>
+    </div>
+    <div class="input-container" style="margin: 0 60px 15px;">
+        <input type="#{type}" id="#{label}" required="required" value="Le : <%= I18n.l(@appointment.date, format: :short, locale: :fr) %>" readonly="readonly" />
+        <div class="bar"></div>
+    </div>
+    <% if !@appointment.is_accepted? %>
+    <div class="button-container">
+        <button><span>Envoyer</span></button>
+    </div>
+    <% else %>
+    <div class="button-container">
+        <a href="/appointments" data-method="GET">
+        <button disabled="disabled"><span><i class="fa fa-calendar-check-o"></i></span></button>
+        </a>
+    </div>
+    <% end %>
+    <% end %>
+</div>

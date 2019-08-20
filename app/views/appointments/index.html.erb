@@ -1,0 +1,34 @@
+<% content_for :css_tag do %>
+<!--fullcalendar-->
+<link href='/assets/vendor/fullcalendar-3.7.0/fullcalendar.css' rel='stylesheet' />
+<% end %>
+<% content_for :js_tag do %>
+<!--calender-->
+<script src='/assets/vendor/fullcalendar-3.7.0/lib/moment.min.js'></script>
+<script src='/assets/vendor/fullcalendar-3.7.0/fullcalendar.js'></script>
+<script src='/assets/vendor/fullcalendar-3.7.0/locale/fr.js'></script>
+<!--init calendar-->
+<!-- <script src='/assets/vendor/js-init/init-calendar-basic.js'></script> -->
+<% end %>
+<!--main content wrapper-->
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <!--calendar-->
+        <div class="row">
+            <div class=" col-md-12">
+                <div class="card card-shadow mb-4">
+                    <div class="card-header border-0">
+                        <div class="custom-title-wrap bar-success">
+                            <div class="custom-title">Mon agenda</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div id='calendar'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/calendar-->
+    </div>
+</div>
+<%= render 'calendar', appointments: Appointment.all %>

@@ -1,0 +1,94 @@
+<div id="reveal-footer" class="has-footer-widgets">
+    <div class="reveal-content">
+        <div class="footer-widgets bg-inverse dark">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-3 widget">
+                        <img src="/assets/l-images/sayna_logo.png" style="border-radius: 50%" alt="logo" class="footer-logo">
+                        <p>Ascenseur digital des jeunes à Madagascar</p>
+                    </div><!-- / column-->
+                    <div class="col-lg-3 widget">
+                        <h3 class="widget-title"> NOUS CONTACTER</h3>
+                        <ul class="footer-list">
+                            <li class="mb-3"><a><i class="fas fa-phone mr-2"></i> +261 (0)34 50 057 49</a></li>
+                            <li class="mb-3"><a href="mailto:hello@sayna.io"><i class="fas fa-envelope mr-2"></i> hello@sayna.io</a></li>
+                            <li class="mb-3"><i class="fas fa-map-marked-alt mr-2"></i> faravohitra Tananarive</li>
+                        </ul>
+                    </div><!-- / column-->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </div><!-- / footer-widgets -->
+        <footer class="bg-darkgrey dark">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 footer-left-area">
+                        <p>© 2019 Sayna</p>
+                    </div>
+                    <div class="col-lg-4 social-icons footer-right-area">
+                        <a href="https://www.facebook.com/HelloSayna/" class="btn-social text-whit"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/razafimahefam?lang=en" class="btn-social"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/matina_razafimahefa/?hl=en" class="btn-social"><i class="fab fa-instagram"></i></a>
+                    </div><!-- / social-icons -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </footer>
+    </div><!-- / reveal-content -->
+</div><!-- / reveal-footer -->
+<!-- Core JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function() {
+    if (Modernizr.touch) {
+        // show the close overlay button
+        $(".close-overlay").removeClass("hidden");
+        // handle the adding of hover class when clicked
+        $(".img").click(function(e) {
+            if (!$(this).hasClass("hover")) {
+                $(this).addClass("hover");
+            }
+        });
+        // handle the closing of the overlay
+        $(".close-overlay").click(function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if ($(this).closest(".img").hasClass("hover")) {
+                $(this).closest(".img").removeClass("hover");
+            }
+        });
+    } else {
+        // handle the mouseenter functionality
+        $(".img").mouseenter(function() {
+                $(this).addClass("hover");
+            })
+            // handle the mouseleave functionality
+            .mouseleave(function() {
+                $(this).removeClass("hover");
+            });
+    }
+});
+</script>
+<!-- / Portfolio Script -->
+<!-- LightBox -->
+<script>
+// This will create a single gallery from all elements that have class "lightbox"
+$('.lightbox').each(function() {
+    $(this).magnificPopup({
+        delegate: 'a.image-lightbox', // the selector for gallery item
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+});
+</script>
+<!-- / LightBox -->
+<!-- facts counter -->
+<script>
+$('.timer').countTo({
+    refreshInterval: 60,
+    formatter: function(value, options) {
+        return value.toFixed(options.decimals);
+    },
+});
+</script>
+<!-- / facts counter -->

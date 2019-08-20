@@ -1,0 +1,103 @@
+{:uriI"†file://app/assets/codelab/vendor/amcharts/plugins/animate/examples/radar.html?type=text/html&id=253c079ac93827a6442a6533fd3e0645303e5a097fccaa1d7396bff54d43b20c:ET:load_pathI"app/assets/codelab;T:filenameI"Kapp/assets/codelab/vendor/amcharts/plugins/animate/examples/radar.html;T:	nameI"3vendor/amcharts/plugins/animate/examples/radar;T:logical_pathI"8vendor/amcharts/plugins/animate/examples/radar.html;T:content_typeI"text/html;T:sourceI"V	<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+      }
+
+      #chartdiv {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="http://www.amcharts.com/lib/3/radar.js"></script>
+    <script src="http://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="../animate.min.js"></script>
+
+    <div id="chartdiv"></div>
+
+    <script>
+      var chart = AmCharts.makeChart("chartdiv", {
+        "type": "radar",
+        "theme": "light",
+        "dataProvider": generateChartData(),
+        "graphs": [{
+          "bullet": "round",
+          "bulletSizeField": "bullet1",
+          "lineThickness": 2,
+          "valueField": "value",
+          "type": "line",
+          "alphaField": "alpha1",
+          "dashLengthField": "dash1"
+        }, {
+          "bullet": "round",
+          "bulletSizeField": "bullet2",
+          "lineThickness": 2,
+          "valueField": "value2",
+          "type": "line",
+          "alphaField": "alpha2",
+          "dashLengthField": "dash2"
+        }],
+        "valueAxes": [{
+          "minimum": 0,
+          "maximum": 100
+        }],
+        "categoryField": "category"
+      });
+
+
+      function generateChartData() {
+        var chartData = [];
+
+        for ( var i = 0; i < 25; i++ ) {
+          var a = Math.floor( Math.random() * 100 );
+          var b = Math.floor( Math.random() * 100 );
+
+          chartData.push( {
+            category: "" + i,
+            value: a,
+            value2: b,
+            bullet1: Math.floor(Math.random() * 10),
+            bullet2: Math.floor(Math.random() * 10),
+            alpha1: (Math.random() < 0.5 ? 0 : 1),
+            alpha2: (Math.random() < 0.5 ? 0 : 1),
+            dash1: Math.floor(Math.random() * 20),
+            dash2: Math.floor(Math.random() * 20)
+          } );
+        }
+
+        return chartData;
+      }
+
+
+      function loop() {
+        var data = generateChartData();
+
+        chart.animateData(data, {
+          duration: 1000,
+          complete: function () {
+            setTimeout(loop, 2000);
+          }
+        });
+      }
+
+      chart.addListener("init", function () {
+        setTimeout(loop, 1000);
+      });
+    </script>
+  </body>
+</html>
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"Yfile-digest://app/assets/codelab/vendor/amcharts/plugins/animate/examples/radar.html;TTF:charsetI"
+utf-8;F:digest"%`+ÕŒ$p
+…¡Ç(cDµCnY<ı"e	í=:lengthiV	:dependencies_digest"%XâóQ]ŒX°Ÿl˜åú˚nzé≠äöX˘¬∆6œ:idI"E253c079ac93827a6442a6533fd3e0645303e5a097fccaa1d7396bff54d43b20c;F:
+mtimel+hê>]

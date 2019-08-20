@@ -1,0 +1,145 @@
+<% content_for :css_tag do %>
+<!--summernote-->
+<link href="/assets/vendor/summernote/summernote-bs4.css" rel="stylesheet">
+<!--datetime & time picker-->
+<link href="/assets/vendor/datetime-picker/css/datetimepicker.css" rel="stylesheet">
+<link href="/assets/vendor/timepicker/css/timepicker.css" rel="stylesheet">
+<% end %>
+<% content_for :js_tag do %>
+<!--summernote-->
+<script src="/assets/vendor/summernote/summernote-bs4.min.js"></script>
+<script src="/assets/vendor/summernote/lang/summernote-fr-FR.min.js"></script>
+<!--init-->
+<script src="/assets/vendor/js-init/init-summernote.js"></script>
+<!--datetime picker-->
+<script src="/assets/vendor/datetime-picker/js/bootstrap-datetimepicker.js"></script>
+<script src="/assets/vendor/datetime-picker/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/assets/vendor/timepicker/js/bootstrap-timepicker.js"></script>
+<!--init datetime picker-->
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    //datetime picker start
+    $(function() {
+        $(".form_datetime-adv").datetimepicker({
+            format: "Le dd MM yyyy à hh:ii",
+            autoclose: true,
+            todayBtn: true,
+            startDate: "<%= appointment.date.strftime("%Y-%B-%d %H:%M") %>",
+            minuteStep: 10,
+            pickerPosition: "bottom-left",
+            templates: {
+                leftArrow: '<i class="fa fa-angle-left"></i>',
+                rightArrow: '<i class="fa fa-angle-right"></i>'
+            }
+
+        });
+    });
+});
+</script>
+<% end %>
+
+<%= form_with(model: appointment, local: true, html: {id: "app-form"}) do |form| %>
+<% if action_name == "new" %>
+<div class="card alt">
+    <div class="toggle"></div>
+    <h1 class="title">Demander un rendez-vous<div class="close"></div>
+    </h1>
+    <div class="input-container">
+        <%= form.text_field :name, required: "required" %>
+        <%= form.label :name, "Nom" %>
+        <div class="bar"></div>
+    </div>
+    <div class="input-container">
+        <%= form.text_field :company, required: "required" %>
+        <%= form.label :company, "Nom de l'entreprise" %>
+        <div class="bar"></div>
+    </div>
+    <div class="input-container">
+        <%= form.text_field :address, required: "required" %>
+        <%= form.label :address, "Address" %>
+        <div class="bar"></div>
+    </div>
+    <div class="input-container">
+        <%= form.text_field :email, required: "required" %>
+        <%= form.label :email, "Email" %>
+        <div class="bar"></div>
+    </div>
+    <div class="input-container">
+        <%= form.text_field :tel, required: "required" %>
+        <%= form.label :tel, "Contact" %>
+        <div class="bar"></div>
+    </div>
+    <div class="row">
+        <div class="col-6 col-md-6 input-group date dpMonths" data-date-viewmode="months" data-date-format="mm/yyyy" data-date="12-08-2017">
+            <input type="text" id="appointment_start_date" name="appointment[start_date]" class="form-control" placeholder="03-07" aria-label="Right Icon" aria-describedby="dp-mdo">
+            <div class="input-group-append">
+                <button id="dp-mdo" class="btn btn-primary" type="button"><i class="fa fa-calendar f14"></i></button>
+            </div>
+        </div>
+        <div class="col-6 col-md-6 input-group date dpMonths" data-date-viewmode="months" data-date-format="mm/yyyy" data-date="12-08-2017">
+            <input type="text" id="appointment_end_date" name="appointment[end_date]" class="form-control" placeholder="03-07" aria-label="Right Icon" aria-describedby="dp-mdo">
+            <div class="input-group-append">
+                <button id="dp-mdo" class="btn btn-primary" type="button"><i class="fa fa-calendar f14"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <button><span>Envoyer</span></button>
+    </div>
+</div>
+<% elsif action_name == "edit" %>
+<div class="card alt">
+    <div class="toggle"></div>
+    <h1 class="title">Reporter<div class="close"></div></h1>
+    <div class="collapse">
+    <%= form.hidden_field :date %>
+    <%= form.hidden_field :m3 %>
+    </div>
+    <div class="input-container date form_datetime-adv" style="margin: 0 10px 10px;">
+        <input type="text" id="new-date" class="form-control rounded mr-2 mb-2" value="Le <%= I18n.l(@appointment.date, format: :short, locale: :fr) %>">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-dark date-reset"><i class="fa fa-times"></i></button>
+            <button type="button" class="btn btn-purple date-set"><i class="fa fa-calendar f14"></i></button>
+        </div>
+    </div>
+    <div class="input-container" style="margin: 0;">
+        <div id="summernote">
+            <style type="text/css">
+            .note-editor.note-frame.card {
+                padding: 0;
+                height: 300px;
+            }
+
+            .note-editor.note-frame.card.fullscreen {
+                height: 100%;
+                margin: 0 10px 0 0;
+            }
+            </style>
+            <%= appointment.m3.html_safe %>
+        </div>
+    </div>
+    <% if !@appointment.is_accepted? %>
+    <div class="button-container mt-2">
+        <button id="edit"><span>Editer</span></button>
+    </div>
+    <% end %>
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        let editBtn = $(`#edit`);
+        editBtn.click(function(event) {
+            let m3Input = $(`#appointment_m3`),
+                dateInput = $(`#appointment_date`),
+                newDate = $(`#new-date`).val(),
+                newMail = $(`.note-editable.card-block:first`).html();
+            /* Act on the event */
+            event.preventDefault();
+            m3Input.attr('value', newMail);
+            dateInput.attr('value', newDate);
+            $(`#app-form`).submit();
+        });
+
+    });
+    </script>
+</div>
+<% end %>
+<% end %>

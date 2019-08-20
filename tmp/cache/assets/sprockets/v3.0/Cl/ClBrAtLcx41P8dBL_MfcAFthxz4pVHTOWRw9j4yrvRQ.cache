@@ -1,0 +1,15 @@
+{:uriI"Ÿfile://app/assets/codelab/vendor/amcharts/plugins/export/package.json?type=application/json&id=c51af538325c60dfad00e3e9d454160a526bbca7ea690f6f5471aa5de8e3f355:ET:load_pathI"app/assets/codelab;T:filenameI"Capp/assets/codelab/vendor/amcharts/plugins/export/package.json;T:	nameI"+vendor/amcharts/plugins/export/package;T:logical_pathI"0vendor/amcharts/plugins/export/package.json;T:content_typeI"application/json;T:sourceI"Ó{
+  "name": "amcharts3-export",
+  "version": "1.4.73",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amcharts/export.git"
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Qfile-digest://app/assets/codelab/vendor/amcharts/plugins/export/package.json;TTF:charsetI"
+utf-8;F:digest"%íH0.=iØàitÒê´Ž„œ{ÀôXôŽÌKœñO:lengthiÓ:dependencies_digest"%nÇI¢?•Ö"xY1Ú#ª9áñÍuì;Ý>¢lfEBhç:idI"Ec51af538325c60dfad00e3e9d454160a526bbca7ea690f6f5471aa5de8e3f355;F:
+mtimel+g>]

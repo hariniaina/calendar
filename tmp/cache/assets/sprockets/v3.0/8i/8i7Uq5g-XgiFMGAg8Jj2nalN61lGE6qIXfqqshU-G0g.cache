@@ -1,0 +1,16 @@
+{:uriI"£file://app/assets/codelab/vendor/amcharts/plugins/dataloader/package.json?type=application/json&id=fda039992f862f86e01d6bf968511467ee268a96bc4094452cfeeaadaf7c5e4f:ET:load_pathI"app/assets/codelab;T:filenameI"Gapp/assets/codelab/vendor/amcharts/plugins/dataloader/package.json;T:	nameI"/vendor/amcharts/plugins/dataloader/package;T:logical_pathI"4vendor/amcharts/plugins/dataloader/package.json;T:content_typeI"application/json;T:sourceI"Û{
+  "name": "amcharts3-dataloader",
+  "version": "1.0.19",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amcharts/dataloader.git"
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ufile-digest://app/assets/codelab/vendor/amcharts/plugins/dataloader/package.json;TTF:charsetI"
+utf-8;F:digest"%¹ åFlÒ•£
+æ÷/ùVÜ¦žç“x“x£\X9£b1Ç:lengthiÛ:dependencies_digest"%CÁq:°6±$Þ÷dÎŠÞ5¤¡€—fôó5ÛFç7mõa,:idI"Efda039992f862f86e01d6bf968511467ee268a96bc4094452cfeeaadaf7c5e4f;F:
+mtimel+h>]

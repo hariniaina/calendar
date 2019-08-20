@@ -1,0 +1,52 @@
+<% content_for :css_tag do %>
+<!--summernote-->
+<link href="/assets/vendor/summernote/summernote-bs4.css" rel="stylesheet">
+<!--datetime & time picker-->
+<link href="/assets/vendor/datetime-picker/css/datetimepicker.css" rel="stylesheet">
+<link href="/assets/vendor/timepicker/css/timepicker.css" rel="stylesheet">
+<% end %>
+<% content_for :js_tag do %>
+<!--summernote-->
+<script src="/assets/vendor/summernote/summernote-bs4.min.js"></script>
+<script src="/assets/vendor/summernote/lang/summernote-fr-FR.min.js"></script>
+<!--init-->
+<script src="/assets/vendor/js-init/init-summernote.js"></script>
+<!--datetime picker-->
+<script src="/assets/vendor/datetime-picker/js/bootstrap-datetimepicker.js"></script>
+<script src="/assets/vendor/datetime-picker/js/locales/bootstrap-datetimepicker.fr.js"></script>
+<script src="/assets/vendor/timepicker/js/bootstrap-timepicker.js"></script>
+<!--init datetime picker-->
+<script src="/assets/vendor/js-init/pickers/init-datetime-picker.js"></script>
+<% end %>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $('.toggle').on('click', function() { $('.container').stop().addClass('active'); });
+    $('.close').on('click', function() { $('.container').stop().removeClass('active'); });
+});
+</script>
+<div class="container pt-2">
+    <div class="card"></div>
+    <div class="card">
+        <h1 class="title">Login</h1>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="input-container">
+            <%= f.email_field :email, autofocus: true, required: "required" %>
+            <%= f.label :email %>
+            <div class="bar"></div>
+          </div>
+
+          <div class="input-container">
+            <%= f.password_field :password, required: "required" %>
+            <%= f.label :password %>
+            <div class="bar"></div>
+          </div>
+
+          <div class="button-container">
+            <button><span>Go</span></button>
+          </div>
+
+          <div class="footer"><a href="javascript:;" data-method="GET" title="Available soon">Forgot your password?</a></div>
+        <% end %>
+    </div>
+    <%= render template: 'users/registrations/new' %>
+</div>

@@ -1,0 +1,15 @@
+{:uriI"£file://app/assets/codelab/vendor/amcharts/plugins/responsive/package.json?type=application/json&id=0630ae3cc4f6406980ec11104a4a298330d59962a72467a226a6d14d597b1d85:ET:load_pathI"app/assets/codelab;T:filenameI"Gapp/assets/codelab/vendor/amcharts/plugins/responsive/package.json;T:	nameI"/vendor/amcharts/plugins/responsive/package;T:logical_pathI"4vendor/amcharts/plugins/responsive/package.json;T:content_typeI"application/json;T:sourceI"Ú{
+  "name": "amcharts3-responsive",
+  "version": "1.0.5",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amcharts/responsive.git"
+  }
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Ufile-digest://app/assets/codelab/vendor/amcharts/plugins/responsive/package.json;TTF:charsetI"
+utf-8;F:digest"%i#…$…w¤à„•$´6g¨õ†&¬´ÔôÖÙ#-AK:lengthiÚ:dependencies_digest"%Qù:;uÉÞwÍ	–Gy°„{Èºþ¬£×«X†Åo:idI"E0630ae3cc4f6406980ec11104a4a298330d59962a72467a226a6d14d597b1d85;F:
+mtimel+g>]

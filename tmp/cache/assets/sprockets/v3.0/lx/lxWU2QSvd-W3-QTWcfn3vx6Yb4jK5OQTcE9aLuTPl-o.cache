@@ -1,0 +1,29 @@
+{:uriI"Øfile://app/assets/codelab/vendor/amcharts/plugins/dataloader/examples/data/gauge.json?type=application/json&id=15751c6688271a952d92d9354d12426b5dec47dc3ccead7a31df78df2c8e3e19:ET:load_pathI"app/assets/codelab;T:filenameI"Sapp/assets/codelab/vendor/amcharts/plugins/dataloader/examples/data/gauge.json;T:	nameI";vendor/amcharts/plugins/dataloader/examples/data/gauge;T:logical_pathI"@vendor/amcharts/plugins/dataloader/examples/data/gauge.json;T:content_typeI"application/json;T:sourceI"ë[ {
+  "innerRadius": 70,
+  "nailRadius": 0,
+  "radius": "80%",
+  "startWidth": 10,
+  "endWidth": 10,
+  "value": 4
+}, {
+  "innerRadius": 70,
+  "nailRadius": 0,
+  "radius": "100%",
+  "startWidth": 6,
+  "endWidth": 6,
+  "value": 8
+}, {
+  "axis": "axis2",
+  "color": "#CC0000",
+  "innerRadius": 50,
+  "nailRadius": 0,
+  "radius": "100%",
+  "startWidth": 6,
+  "endWidth": 6,
+  "alpha": 1,
+  "value": 11
+} ];T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"afile-digest://app/assets/codelab/vendor/amcharts/plugins/dataloader/examples/data/gauge.json;TTF:charsetI"
+utf-8;F:digest"%ùSòè’÷W—a©[ïSíYäkX)”tÔ|π∫^ÒV˚:lengthië:dependencies_digest"%<0b4zA∏pÌπéÔs≤Èπ‹Vﬁ0k“K;8§ N FR:idI"E15751c6688271a952d92d9354d12426b5dec47dc3ccead7a31df78df2c8e3e19;F:
+mtimel+hê>]

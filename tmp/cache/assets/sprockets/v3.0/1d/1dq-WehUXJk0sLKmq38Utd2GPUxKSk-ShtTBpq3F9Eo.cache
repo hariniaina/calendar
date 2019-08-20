@@ -1,0 +1,90 @@
+{:uriI"¥file://app/assets/codelab/vendor/amcharts/plugins/responsive/examples/serial2.html?type=text/html&id=a51c1fc7d76942c7a0a7aa93ae343227f9fb02c29758268ae7b4fe8fca8d6832:ET:load_pathI"app/assets/codelab;T:filenameI"Papp/assets/codelab/vendor/amcharts/plugins/responsive/examples/serial2.html;T:	nameI"8vendor/amcharts/plugins/responsive/examples/serial2;T:logical_pathI"=vendor/amcharts/plugins/responsive/examples/serial2.html;T:content_typeI"text/html;T:sourceI"‡	<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>amCharts Responsive Example</title>
+    <script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="http://www.amcharts.com/lib/3/serial.js"></script>
+    <script src="http://www.amcharts.com/lib/3/themes/dark.js"></script>
+    <script src="../responsive.min.js"></script>
+    <style>
+    body, html {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    </style>
+    <script>
+      AmCharts.makeChart("chartdiv", {
+        "type": "serial",
+        "theme": "dark",
+        "dataProvider": [{
+            "year": 2005,
+            "income": 23.5,
+            "expenses": 18.1
+        }, {
+            "year": 2006,
+            "income": 26.2,
+            "expenses": 22.8
+        }, {
+            "year": 2007,
+            "income": 30.1,
+            "expenses": 23.9
+        }, {
+            "year": 2008,
+            "income": 29.5,
+            "expenses": 25.1
+        }, {
+            "year": 2009,
+            "income": 24.6,
+            "expenses": 25
+        }],
+        "categoryField": "year",
+        "startDuration": 1,
+        "rotate": true,
+        "categoryAxis": {
+          "gridPosition": "start"
+        },
+        "valueAxes": [{
+          "position": "top",
+          "title": "Million USD",
+          "minorGridEnabled": true
+        }],
+        "graphs": [{
+          "type": "column",
+          "title": "Income",
+          "valueField": "income",
+          "fillAlphas":1,
+          "balloonText": "<span style='font-size:13px;'>[[title]] in [[category]]:<b>[[value]]</b></span>"
+        }, {
+          "type": "line",
+          "title": "Expenses",
+          "valueField": "expenses",
+          "lineThickness": 2,
+          "bullet": "round",
+          "balloonText": "<span style='font-size:13px;'>[[title]] in [[category]]:<b>[[value]]</b></span>"
+        }],
+        "legend": {
+          "useGraphSettings": true
+        },
+        "creditsPosition": "top-right",
+        "responsive": {
+          "enabled": true
+        }
+      });
+    </script>
+  </head>
+
+  <body style="background-color:#282828;">
+    <div id="chartdiv" style="width: 100%; height: 100%;"></div>
+  </body>
+
+</html>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"^file-digest://app/assets/codelab/vendor/amcharts/plugins/responsive/examples/serial2.html;TTF:charsetI"
+utf-8;F:digest"%¹ú÷'Ê³¤ÆuCùþy$‘VÑ‘\=Z¥LŒ•ë.Fá:lengthi‡	:dependencies_digest"%\
+
+¹oVŽûAXRÒÒû@z¯Ë#°MÖ¡¼ˆÓÞª:idI"Ea51c1fc7d76942c7a0a7aa93ae343227f9fb02c29758268ae7b4fe8fca8d6832;F:
+mtimel+g>]

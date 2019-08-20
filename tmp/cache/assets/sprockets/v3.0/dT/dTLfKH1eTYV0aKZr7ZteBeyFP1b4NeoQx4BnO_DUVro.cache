@@ -1,0 +1,32 @@
+{:uriI"™file://app/assets/codelab/vendor/simple-line-icons/package.json?type=application/json&id=decc1823f5530b75ef5ed88c99c1f81100d9c7fbf3d278c5abcd7d566485a8cd:ET:load_pathI"app/assets/codelab;T:filenameI"=app/assets/codelab/vendor/simple-line-icons/package.json;T:	nameI"%vendor/simple-line-icons/package;T:logical_pathI"*vendor/simple-line-icons/package.json;T:content_typeI"application/json;T:sourceI"P{
+  "name": "simple-line-icons",
+  "version": "2.4.1",
+  "description": "Simple and elegent line icons.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesabbir/simple-line-icons.git"
+  },
+  "keywords": [
+    "icon",
+    "simple",
+    "line",
+    "css",
+    "webfont"
+  ],
+  "author": "Sabbir Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thesabbir/simple-line-icons/issues"
+  },
+  "homepage": "https://thesabbir.github.io/simple-line-icons"
+}
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Kfile-digest://app/assets/codelab/vendor/simple-line-icons/package.json;TTF:charsetI"
+utf-8;F:digest"% >;BUÀÇÓ‡Én–²
+4þÑò@_J5é:îV:lengthiP:dependencies_digest"%”)f¢°¼g}'Œ.‡ef}k‹{Ö*p#f‹Ô$:idI"Edecc1823f5530b75ef5ed88c99c1f81100d9c7fbf3d278c5abcd7d566485a8cd;F:
+mtimel+g>]
